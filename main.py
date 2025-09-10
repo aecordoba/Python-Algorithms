@@ -16,12 +16,8 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 from sort import insertion_sort
+
 if __name__ == '__main__':
     array = [12, -4, 27, 5, 0, -2, 5, 9]
     insertion_sort(array)
