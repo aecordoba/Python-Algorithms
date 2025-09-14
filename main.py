@@ -16,9 +16,17 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from sort import insertion_sort
+import insertion_sort
 
 if __name__ == '__main__':
     array = [12, -4, 27, 5, 0, -2, 5, 9]
-    insertion_sort(array)
+    insertion_sort.sort_0(array)
+    print(f'Sorted array: {array}')
+
+    array = [12, -4, 27, 5, 0, -2, 5, 9]
+    insertion_sort.sort_1(array, direction=insertion_sort.downward)
+    print(f'Sorted array: {array}')
+
+    array = [12, -4, 27, 5, 0, -2, 5, 9]
+    insertion_sort.sort_2(array, direction=lambda x, y: x > y)
     print(f'Sorted array: {array}')
